@@ -29,11 +29,10 @@ const getCountryByName = async (countryName) =>{
     langOutput.innerText =JSON.stringify(languages)
     languagesSection.appendChild(langOutput)
 
-    const capital = data[0].captial;
+    const capital = data[0].capital;
     const capitalOutput = document.createElement("p");
     capitalOutput.innerText = JSON.stringify(capital);
     capitalSection.appendChild(capitalOutput);
-
 
     return data[0]
 }
@@ -42,17 +41,9 @@ getCountryByName("peru");
 
 
 // const printDetails = (countryName) => {
-//     const country = getCountryByName(countryName);
+//     const country = getCountryByName(countryName).message;
 //     console.log(country);
-//     // const name = country.name.common;
-//     // const nameOutput = document.createElement("p")
-//     // nameOutput.innerText = name
-//     // section.appendChild(nameOutput)
-//     // console.log(name);
-//     // const population = country.population;
-//     // const popOutput = document.createElement("p");
-//     // popOutput.innerText = population;
-//     // section.appendChild(popOutput);
+   
 // }
 
 // printDetails("peru")
